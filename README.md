@@ -18,11 +18,11 @@ var uniqueProperties = new RavenUniqueEnforcer<User>();
 					        var user = new User() { Name = "John", Email = "john@gmail.com" };
                     new RavenUniqueInserter().StoreUnique(session,user, list);
 
-                    //Should throw a ConcurrencyException exception 
+                    //Should throw a UniqueConstraintViolationException exception 
                     var user1 = new User() { Name = "John", Email = "john@gmail.com" };
                     new RavenUniqueInserter().StoreUnique(session, user1, list);
                     }
-                     catch (ConcurrencyException)
+                     catch (UniqueConstraintViolationException)
                     {
                         // email address and name already in use 
                     }
