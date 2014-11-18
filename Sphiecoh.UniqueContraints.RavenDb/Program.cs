@@ -1,51 +1,39 @@
-﻿
-using Raven.Client.UniqueConstraints;
-using Raven.Database.Server;
+﻿using Raven.Client;
 using Raven.Client.Document;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Raven.Client;
+using UniqueConstraints.RavenDb.Enforcer;
 
-namespace Sphiecoh.UniqueContraints.RavenDb
+namespace Sphiecoh.UniqueContraints.RavenDb.Sample
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            
-           using (var store = NewDocumentStore())
-			{
-				var list = new RavenUniqueEnforcer<User>();
+            using (var store = NewDocumentStore())
+            {
+                var list = new RavenUniqueEnforcer<User>();
                 list.AddProperty(x => x.Name);
-                list.AddProperty(x => x.Email);              		
+                list.AddProperty(x => x.Email);
 
-				using (var session = store.OpenSession())
-				{
-					//Should save
-					var user = new User() { Name = "John", Email = "john@gmail.com" };
-                    new RavenUniqueInserter().StoreUnique(session,user, list);
+                using (var session = store.OpenSession())
+                {
+                    //Should save
+                    var user = new User() { Name = "John", Email = "john@gmail.com" };
+                    new RavenUniqueInserter().StoreUnique(session, user, list);
 
-                    //Should throw a ConcurrencyException exception 
+                    //Should throw a ConcurrencyException exception
                     var user1 = new User() { Name = "John", Email = "john@gmail.com" };
                     new RavenUniqueInserter().StoreUnique(session, user1, list);
-										
-				}
-			}
-
-		
+                }
+            }
         }
 
         private static IDocumentStore NewDocumentStore()
         {
-          return  new DocumentStore
-            {
-                Url = "http://localhost:8085",
-                DefaultDatabase = "Test",
-
-            }.Initialize();
+            return new DocumentStore
+              {
+                  Url = "http://localhost:8080",
+                  DefaultDatabase = "Test",
+              }.Initialize();
         }
     }
 
@@ -59,5 +47,4 @@ namespace Sphiecoh.UniqueContraints.RavenDb
 
         public string LastName { get; set; }
     }
-
 }
