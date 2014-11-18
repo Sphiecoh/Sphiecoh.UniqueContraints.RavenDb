@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>UniqueConstraints.RavenDb.Enforcer</id>
+        <version>1.0.5</version>
+        <title>Unique Constraints RavenDb Enforcer</title>
+        <authors>Sifiso Shezi</authors>
+        <owners>Sifiso Shezi</owners>
+        <projectUrl>https://github.com/Sphiecoh/Sphiecoh.UniqueContraints.RavenDb/blob/master/README.md</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>This package provides an alternative to creating unique constraints in RavenDb</description>
+        <releaseNotes>Added property name to the Id. Added UniqueConstraint class.Removed dependencies.</releaseNotes>
+        <copyright>Copyright 2014</copyright>
+        <language>en-ZA</language>
+        <tags>nosql ravendb raven document database clien UniqueConstraints</tags>
+    </metadata>
+</package>
