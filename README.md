@@ -16,11 +16,11 @@ var uniqueProperties = new RavenUniqueEnforcer<User>();
                {
 					       //Should save
 					        var user = new User() { Name = "John", Email = "john@gmail.com" };
-                    new RavenUniqueInserter().StoreUnique(session,user, list);
+                    new RavenUniqueInserter().StoreUnique(session,user, uniqueProperties);
 
                     //Should throw a UniqueConstraintViolationException exception 
                     var user1 = new User() { Name = "John", Email = "john@gmail.com" };
-                    new RavenUniqueInserter().StoreUnique(session, user1, list);
+                    new RavenUniqueInserter().StoreUnique(session, user1, uniqueProperties);
                     }
                      catch (UniqueConstraintViolationException)
                     {
