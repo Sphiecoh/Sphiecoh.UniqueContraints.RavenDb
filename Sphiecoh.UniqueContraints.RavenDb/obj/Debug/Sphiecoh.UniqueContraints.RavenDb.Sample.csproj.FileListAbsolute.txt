@@ -5,9 +5,7 @@ C:\Free Lance\Unique Constraints\Sphiecoh.UniqueContraints.RavenDb\bin\Debug\Rav
 C:\Free Lance\Unique Constraints\Sphiecoh.UniqueContraints.RavenDb\bin\Debug\Raven.Client.Lightweight.dll
 C:\Free Lance\Unique Constraints\Sphiecoh.UniqueContraints.RavenDb\bin\Debug\UniqueConstraints.RavenDb.Enforcer.dll
 C:\Free Lance\Unique Constraints\Sphiecoh.UniqueContraints.RavenDb\bin\Debug\UniqueConstraints.RavenDb.Enforcer.pdb
-C:\Free Lance\Unique Constraints\Sphiecoh.UniqueContraints.RavenDb\bin\Debug\Raven.Abstractions.pdb
 C:\Free Lance\Unique Constraints\Sphiecoh.UniqueContraints.RavenDb\bin\Debug\Raven.Abstractions.xml
-C:\Free Lance\Unique Constraints\Sphiecoh.UniqueContraints.RavenDb\bin\Debug\Raven.Client.Lightweight.pdb
 C:\Free Lance\Unique Constraints\Sphiecoh.UniqueContraints.RavenDb\bin\Debug\Raven.Client.Lightweight.xml
 C:\Free Lance\Unique Constraints\Sphiecoh.UniqueContraints.RavenDb\obj\Debug\Sphiecoh.UniqueContraints.RavenDb.Sample.csprojResolveAssemblyReference.cache
 C:\Free Lance\Unique Constraints\Sphiecoh.UniqueContraints.RavenDb\obj\Debug\Sphiecoh.UniqueContraints.RavenDb.exe
