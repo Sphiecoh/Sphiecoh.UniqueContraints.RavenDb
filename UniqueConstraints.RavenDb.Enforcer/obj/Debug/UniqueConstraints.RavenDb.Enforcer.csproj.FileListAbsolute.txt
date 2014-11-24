@@ -8,3 +8,4 @@ C:\Free Lance\Unique Constraints\UniqueConstraints.RavenDb.Enforcer\bin\Debug\Ra
 C:\Free Lance\Unique Constraints\UniqueConstraints.RavenDb.Enforcer\bin\Debug\Raven.Client.Lightweight.xml
 C:\Free Lance\Unique Constraints\UniqueConstraints.RavenDb.Enforcer\obj\Debug\UniqueConstraints.RavenDb.Enforcer.dll
 C:\Free Lance\Unique Constraints\UniqueConstraints.RavenDb.Enforcer\obj\Debug\UniqueConstraints.RavenDb.Enforcer.pdb
+C:\Free Lance\Unique Constraints\UniqueConstraints.RavenDb.Enforcer\obj\Debug\UniqueConstraints.RavenDb.Enforcer.csprojResolveAssemblyReference.cache
